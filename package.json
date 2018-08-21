@@ -1,0 +1,39 @@
+{
+  "name": "Readit",
+  "version": "1.1.0",
+  "description": "Master Electron Course Project",
+  "main": "main.js",
+  "author": "Hirun",
+  "homepage": "https://wonnapob.com",
+  "scripts": {
+    "start": "electron .",
+    "mac": "electron-builder -m",
+    "win": "electron-builder -w",
+    "build": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.stackacademy.readit",
+    "directories": {
+      "buildResources": "."
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "win": {
+
+    },
+    "linux": {
+      "category": "Network"
+    }
+  },
+  "dependencies": {
+    "bulma": "^0.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "query-string": "^6.1.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.28.1"
+  }
+}
