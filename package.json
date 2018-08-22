@@ -1,6 +1,6 @@
 {
   "name": "Readit",
-  "version": "0.0.9",
+  "version": "1.1.0",
   "description": "Master Electron Course Project",
   "main": "main.js",
   "author": "Hirun",
@@ -10,7 +10,7 @@
     "mac": "electron-builder -m",
     "win": "electron-builder -w",
     "build": "electron-builder -mwl",
-		"publish": "electron-builder build -w -p onTagOrDraft"
+    "publish": "electron-builder build -w -p onTagOrDraft"
   },
   "build": {
     "appId": "com.stackacademy.readit",
@@ -25,7 +25,7 @@
       "target": "dmg"
     },
     "win": {
-			"publish": [
+      "publish": [
         "github"
       ]
     },
@@ -37,14 +37,14 @@
     }
   },
   "dependencies": {
-    "bulma": "^0.3.1",
-    "electron-log": "^2.2.17",
-    "electron-updater": "^3.1.1",
+    "bulma": "^0.3.2",
+    "electron-log": "^2.2.11",
+    "electron-updater": "^2.23.3",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "query-string": "^6.1.0"
+    "jquery": "^3.1.1",
+    "query-string": "^4.3.4"
   },
   "devDependencies": {
-    "electron-builder": "^20.28.1"
+    "electron-builder": "^19.46.5"
   }
 }
